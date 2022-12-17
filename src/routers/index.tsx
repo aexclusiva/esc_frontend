@@ -97,7 +97,6 @@ const MyRoutes = () => {
   const { user, setUser, isLoading } = useFindUser();
   return (
     <BrowserRouter
-      basename={process.env.NODE_ENV === "production" ? "/" : "/"}
     >
       <UserContext.Provider value={{ user, setUser, isLoading }}>
         <ScrollToTop />

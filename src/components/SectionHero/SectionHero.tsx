@@ -100,12 +100,12 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
     );
   }
   //Prevent Scroll
-  useEffect(() => {
+/*   useEffect(() => {
     document.body.classList.add("overflow-hidden");
     return () => {
         document.body.classList.remove("overflow-hidden");
     };
-}, []);
+}, []); */
 
   return (
     <div
