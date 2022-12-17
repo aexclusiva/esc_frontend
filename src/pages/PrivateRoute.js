@@ -4,12 +4,12 @@ import { UserContext } from './../hooks/UserContext';
 import Loading from './../components/Loading';
 export default function PrivateRoute(props) {
    const { user, isLoading } = useContext(UserContext);
-   const { component: Component, ...rest } = props;
+   const { component: Component } = props;
    if(isLoading) {
       return <Loading/>
    }
    if(user){
-      return ( <Route {...rest} render={(props) => 
+      return ( <Route  render={(props) => 
            (<Component {...props}/>)
             }
          />
