@@ -77,7 +77,6 @@ const StaySearchForm: FC<StaySearchFormProps> = ({
         />
         <StayDatesRangeInput
           defaultValue={dateRangeValue}
-          defaultFocus={dateFocused}
           onChange={(data) => {
             setDateRangeValue(data);
           }}
