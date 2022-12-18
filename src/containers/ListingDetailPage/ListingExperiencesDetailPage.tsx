@@ -1120,7 +1120,7 @@ const ListingExperiencesDetailPage: FC<ListingExperiencesDetailPageProps> = ({
         </div>
 
         {/* SIDEBAR */}
-        <div className="hidden lg:block flex-grow mt-14 lg:mt-0">
+        <div className="lg:block flex-grow mt-14 lg:mt-0">
           <div className="sticky top-28">{renderSidebar()}</div>
         </div>
       </main>
