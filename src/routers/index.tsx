@@ -97,7 +97,6 @@ const MyRoutes = () => {
   const { user, setUser, isLoading } = useFindUser();
   return (
     <BrowserRouter
-    basename='\'
     >
       <UserContext.Provider value={{ user, setUser, isLoading }}>
         <ScrollToTop />
